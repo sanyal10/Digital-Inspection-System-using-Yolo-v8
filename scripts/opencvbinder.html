@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OpenCV Image Window</title>
+  <p>This is open window</p>
+  <script src="opencv.js"></script>
+</head>
+<body>
+  <div id="image-window"></div>
+
+  <script>
+    // Create an OpenCV image window
+    var window = new cv.Mat("image-window");
+
+    // Update the image data
+    window.data = new Uint8Array(256 * 256 * 3);
+    for (var i = 0; i < window.data.length; i++) {
+      window.data[i] = Math.random() * 255;
+    }
+
+    // Display the image
+    window.imshow();
+  </script>
+</body>
+</html>

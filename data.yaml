@@ -1,0 +1,13 @@
+train: 'C:\Users\DEBAJYOTI\OneDrive\Desktop\object det\Building facade.v2i.yolov8\train\images'
+val:  'C:\Users\DEBAJYOTI\OneDrive\Desktop\object det\Building facade.v2i.yolov8\valid\images'
+test: 'C:\Users\DEBAJYOTI\OneDrive\Desktop\object det\Building facade.v2i.yolov8\test\images'
+
+nc: 3
+names: ['Door', 'Window', 'object']
+
+roboflow:
+  workspace: project1-f9y2d
+  project: building-facade-hhiah
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/project1-f9y2d/building-facade-hhiah/dataset/2
